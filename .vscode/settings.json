@@ -1,0 +1,12 @@
+{
+    "chat.mcp.serverSampling": {
+        "icomeauto/.vscode/mcp.json: com.microsoft/azure": {
+            "allowedModels": [
+                "copilot/claude-haiku-4.5",
+                "copilot/auto",
+                "copilot/claude-opus-4.5",
+                "copilot/claude-sonnet-4"
+            ]
+        }
+    }
+}
