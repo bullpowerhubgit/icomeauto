@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import { 
   Send, Code, DollarSign, TrendingUp, Bot, Mail, Globe, BarChart3, 
   Play, Save, Download, Copy, Check, Moon, Sun, Zap, Settings, Plus, 
@@ -19,18 +19,16 @@ const UniversalAIClient = () => {
   const [loading, setLoading] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
   const [sidebarOpen, setSidebarOpen] = useState(true);
-  const [copied, setCopied] = useState(false);
-  const [selectedTool, setSelectedTool] = useState(null);
   const [toolOutput, setToolOutput] = useState([]);
   const [runningTools, setRunningTools] = useState(new Set());
-  const [notifications, setNotifications] = useState([
+  const [notifications] = useState([
     { id: 1, type: 'success', message: 'Affiliate Bot hat 3 neue Produkte gepostet', time: '2 min ago' },
     { id: 2, type: 'warning', message: 'Email Bot benötigt SMTP Konfiguration', time: '15 min ago' },
     { id: 3, type: 'info', message: 'Trading Bot hat +$23.40 Profit erzielt', time: '1 hour ago' }
   ]);
   
   // Advanced Stats with History
-  const [stats, setStats] = useState({
+  const [stats] = useState({
     todayEarnings: 234.50,
     weeklyEarnings: 1456.80,
     monthlyEarnings: 5892.30,
