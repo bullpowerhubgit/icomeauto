@@ -12,6 +12,10 @@ import {
   Activity, LineChart, PieChart, TrendingDown, Percent, Target as TargetIcon
 } from 'lucide-react';
 
+// Constants
+const HEATMAP_DAYS = 35; // 5 weeks of activity data
+const MAX_CHART_VALUE = 300; // Maximum value for chart height calculation
+
 const UniversalAIClient = () => {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [messages, setMessages] = useState([]);
@@ -51,7 +55,7 @@ const UniversalAIClient = () => {
   ]);
 
   const [activityHeatmap] = useState(() => 
-    Array.from({ length: 35 }, () => Math.random())
+    Array.from({ length: HEATMAP_DAYS }, () => Math.random())
   );
 
   const [monthlyComparison] = useState([
@@ -597,7 +601,7 @@ const UniversalAIClient = () => {
                 </div>
                 <div className="grid grid-cols-7 gap-2">
                   {weeklyChartData.map((data) => {
-                    const height = (data.earnings / 300) * 100;
+                    const height = (data.earnings / MAX_CHART_VALUE) * 100;
                     return (
                       <div key={data.day} className="text-center">
                         <div className="h-32 flex items-end justify-center mb-2">
@@ -1105,7 +1109,7 @@ const UniversalAIClient = () => {
                   <div className="flex items-center justify-between pt-4 border-t border-gray-700">
                     <div>
                       <p className="font-medium">Daten löschen</p>
-                      <p className="text-sm text-gray-400 text-red-400">Alle Daten permanent entfernen</p>
+                      <p className="text-sm text-red-400">Alle Daten permanent entfernen</p>
                     </div>
                     <button className="px-4 py-2 bg-red-500 hover:bg-red-600 rounded-lg transition-colors flex items-center gap-2">
                       <Trash2 size={16} />
