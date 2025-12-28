@@ -1,57 +1,137 @@
-# icomeauto
+# Auto-Income Platform
 
-> Repository initialized on 2025-12-28
+> KI-gesteuerte Einkommensgenerierung - Professionelle Auto-Income Plattform
 
-## Current State
+![React](https://img.shields.io/badge/React-19.2.0-blue) ![Vite](https://img.shields.io/badge/Vite-7.3.0-purple) ![Tailwind](https://img.shields.io/badge/TailwindCSS-4.x-cyan)
 
-This repository is currently in its initial setup phase. It contains configuration files for GitHub Copilot and VS Code, but no source code has been added yet.
+## 🚀 Features
 
-## Repository Structure
+- **Dashboard**: Übersicht über alle Einnahmen und Statistiken
+- **Income Bots**: Automatisierte Bots für verschiedene Einkommensquellen
+  - Affiliate Marketing Bot
+  - Email Marketing Bot
+  - Social Media Bot
+  - Trading Bot
+  - Content Creator Bot
+  - YouTube Automation
+- **AI Assistant**: Integrierter KI-Chat für Hilfe und Automation
+- **Real-time Analytics**: Live-Statistiken und Performance-Tracking
+- **Dark/Light Mode**: Modernes UI mit Theme-Umschaltung
+
+## 📋 Voraussetzungen
+
+- Node.js >= 20.x
+- npm >= 10.x
+
+## 🛠️ Installation
+
+```bash
+# Repository klonen
+git clone https://github.com/bullpowerhubgit/icomeauto.git
+cd icomeauto
+
+# Abhängigkeiten installieren
+npm install
+```
+
+## 🏃 Entwicklung
+
+```bash
+# Entwicklungsserver starten
+npm run dev
+```
+
+Die Anwendung ist dann verfügbar unter: `http://localhost:5173`
+
+## 🏗️ Build
+
+```bash
+# Production Build erstellen
+npm run build
+
+# Build-Vorschau
+npm run preview
+```
+
+## 📁 Projektstruktur
 
 ```
-.
-├── .github/
-│   └── copilot-instructions.md  # Copilot behavior guidelines
-├── .vscode/
-│   ├── mcp.json                 # MCP server configuration
-│   └── settings.json            # VS Code settings
-└── README.md                     # This file
+icomeauto/
+├── src/
+│   ├── UniversalAIClient.jsx  # Haupt-Komponente der Plattform
+│   ├── App.jsx                # App-Einstiegspunkt
+│   ├── main.jsx               # React-Einstiegspunkt
+│   └── index.css              # Global Styles (Tailwind)
+├── public/                     # Statische Assets
+├── dist/                       # Build-Ausgabe
+├── index.html                  # HTML Template
+├── vite.config.js             # Vite Konfiguration
+├── tailwind.config.js         # Tailwind CSS Konfiguration
+├── postcss.config.js          # PostCSS Konfiguration
+└── package.json               # Projekt-Dependencies
 ```
 
-## Getting Started
+## 🎨 Technologie-Stack
 
-This repository is ready for development. Before adding code:
+- **React 19.2.0**: UI Framework
+- **Vite 7.3.0**: Build Tool & Dev Server
+- **Tailwind CSS 4.x**: Utility-First CSS Framework
+- **Lucide React**: Icon Library
+- **PostCSS**: CSS Processing
 
-1. Determine the technology stack (language, framework, build tools)
-2. Set up the project structure based on best practices for the chosen stack
-3. Add appropriate build, test, and lint configurations
-4. Update this README with setup and usage instructions
+## 🤖 Bot-Features
 
-## Configuration
+### Affiliate Marketing Bot
+Automatisches Posten von Affiliate-Produkten auf verschiedenen Plattformen.
 
-### GitHub Copilot
-The repository includes Copilot instructions in `.github/copilot-instructions.md` that guide AI-assisted development to:
-- Confirm stack choices before scaffolding
-- Keep the initial footprint minimal
-- Follow best practices for the chosen technology
-- Include proper documentation and testing
+### Email Marketing Bot
+Automatisierte Email-Kampagnen mit KI-generiertem Content.
 
-### VS Code
-- MCP (Model Context Protocol) server configured for Azure integration
-- Server sampling settings for various Copilot models
+### Social Media Bot
+Auto-Posting auf Twitter, Instagram, LinkedIn und anderen Plattformen.
 
-## Next Steps
+### Trading Bot
+Automatischer Krypto-Trading mit KI-gesteuerten Strategien.
 
-1. Choose a technology stack
-2. Initialize the project with appropriate tools (npm, pip, cargo, etc.)
-3. Add source code structure
-4. Set up CI/CD pipelines
-5. Update documentation
+### Content Creator Bot
+AI-generierter Content für Blogs, Social Media und Websites.
 
-## Contributing
+### YouTube Automation
+Automatische Video-Generierung, Optimierung und Upload.
 
-Please refer to `.github/copilot-instructions.md` for guidelines when using AI-assisted development tools.
+## 📊 Dashboard-Funktionen
 
-## License
+- **Tagesverdienst**: Aktuelle Einnahmen des Tages
+- **Wochenübersicht**: Wöchentliche Earnings mit Trend
+- **Monatsstatistik**: Monatliche Performance
+- **Gesamt-Earnings**: All-time Gesamtverdienst
+- **Bot-Status**: Live-Status aller aktiven Bots
+- **Activity Log**: Echtzeit-Log aller Bot-Aktivitäten
+
+## 🔧 Konfiguration
+
+Die Plattform kann über verschiedene Einstellungen angepasst werden:
+
+- Bot-Konfigurationen
+- API-Keys für verschiedene Services
+- Automatisierungs-Zeitpläne
+- Benachrichtigungseinstellungen
+
+## 📝 Lizenz
 
 [To be determined]
+
+## 🤝 Mitwirkende
+
+Siehe `.github/copilot-instructions.md` für Guidelines bei der Verwendung von AI-assisted Development Tools.
+
+## 📞 Support
+
+Bei Fragen oder Problemen:
+- GitHub Issues erstellen
+- Dokumentation durchsehen
+- Community fragen
+
+---
+
+**Hinweis**: Diese Plattform ist ein Showcase-Projekt. Für produktiven Einsatz sollten Backend-Integration, Authentifizierung und echte API-Verbindungen implementiert werden.
